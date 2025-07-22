@@ -1,23 +1,16 @@
 #include <stdio.h>
-biggest()
-{
-    int num1, num2;
-    // Ask user to enter the two numbers
-    printf("Please Enter Two different values\n");
-    // Read two numbers from the user
-    scanf("%d %d", &num1, &num2);
-    if(num1 > num2)
-    {
-        printf("%d is Largest\n", num1);
-    }
-    else if (num2 > num1)
-    {
-        printf("%d is Largest\n", num2);
-    }
+
+void biggest() {
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    if (a > b)
+        printf("%d is bigger\n", a);
+    else if (b > a)
+        printf("%d is bigger\n", b);
     else
-    {
-        printf("Both are Equal\n");
-    }
-   // return 0;
+        printf("Both numbers are equal\n");
 }
 
